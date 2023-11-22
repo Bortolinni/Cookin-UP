@@ -1,40 +1,50 @@
-# cookin-up
 
-This template should help get you started developing with Vue 3 in Vite.
 
-## Recommended IDE Setup
+  <h1>Cooking Up - Seletor de Receitas</h1>
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+  <p>O <strong>Cooking Up</strong> é uma aplicação que facilita a seleção de receitas com base nos ingredientes que você possui em casa. Você pode explorar diferentes receitas, selecionar os ingredientes desejados e receber sugestões de pratos deliciosos.</p>
 
-## Type Support for `.vue` Imports in TS
+  <h2>Como Funciona</h2>
+  <p>Você está em casa, não tem muitas ideias de receitas para preparar, então utilize este site para selecionar os ingredientes que possui em sua despensa. Siga os passos abaixo:</p>
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+  <h3>1. Selecionar Ingredientes</h3>
+  <p>Utilize os cards de categoria para selecionar os ingredientes que você possui. Os ingredientes disponíveis incluem azeite de oliva, alho, orégano, ovos, queijo e leite.</p>
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+  <h3>2. Sua Lista</h3>
+  <p>Os ingredientes selecionados aparecerão na lista na parte superior da seção de ingredientes, intitulada "Sua Lista". Você pode remover os ingredientes desselecionando-os, caso não queira utilizá-los.</p>
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+  <h3>3. Buscar Receitas</h3>
+  <p>Ao final da página, clique no botão "Buscar Receitas". Isso exibirá as receitas que podem ser feitas com os ingredientes selecionados. Se desejar, você pode clicar no botão "Editar Lista" para realizar uma nova busca.</p>
 
-## Customize configuration
+  <h2>Instalação</h2>
+  <code>
+    git clone https://github.com/seu-usuario/cooking-up.git<br>
+    npm install<br>
+    npm start
+  </code>
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+  <h2>Configuração</h2>
+  <p>Antes de usar o Cooking Up, certifique-se de configurar corretamente as seguintes variáveis de ambiente:</p>
+  <code>
+    PORT: Porta na qual o aplicativo será executado.<br>
+    DATABASE_URL: URL de conexão com o banco de dados.
+  </code>
 
-## Project Setup
+  <h2>Contribuição</h2>
+  <p>Sinta-se à vontade para contribuir com melhorias! Siga estas etapas:</p>
+  <code>
+    git checkout -b feature-nova<br>
+    git commit -m 'Adiciona nova feature'<br>
+    git push origin feature-nova<br>
+    Abra um pull request.
+  </code>
 
-```sh
-npm install
-```
+  <h2>Licença</h2>
+  <p>Este projeto está licenciado sob a licença [Nome da Licença] - veja o arquivo LICENSE.md para detalhes.</p>
 
-### Compile and Hot-Reload for Development
+  <h2>Contato</h2>
+  <p>Se você tiver alguma dúvida ou sugestão, entre em contato pelo email: seu-email@example.com.</p>
 
-```sh
-npm run dev
-```
+</body>
+</html>
 
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
